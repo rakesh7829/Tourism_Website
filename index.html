@@ -12,11 +12,13 @@
         <p class="contact-info"><i class="fas fa-envelope"></i> info@travelagentinhimachal.com</p>
     </div>
 
-    <!-- Mobile Menu Icon -->
-    <div class="menu-icon" onclick="toggleNav()"><i class="fas fa-bars"></i></div>
+    <!-- Hamburger Icon (visible only on mobile) -->
+    <div class="hamburger-icon" onclick="toggleNav()">
+        <i class="fas fa-bars"></i>
+    </div>
 
     <!-- Navigation Bar -->
-    <nav class="nav-links"> <!-- Added "nav-links" class -->
+    <nav class="nav-bar" id="nav-bar">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#aboutus">About Us</a></li>
@@ -74,11 +76,11 @@
         <p>Contact us at: info@shimla-manali-tourism.com</p>
     </footer>
 
-    <!-- JavaScript for Mobile Menu -->
+    <!-- JavaScript for toggling the navigation bar -->
     <script>
         function toggleNav() {
-            var navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('show');
+            var navBar = document.getElementById("nav-bar");
+            navBar.classList.toggle("show");
         }
     </script>
 </body>
