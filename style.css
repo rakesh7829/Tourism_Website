@@ -128,31 +128,6 @@ footer {
 
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 768px) {
-    /* Hide the navigation bar on mobile screens by default */
-    .nav-bar {
-        display: none;
-    }
-
-    /* Show the navigation bar when the hamburger icon is clicked */
-    .show {
-        display: block;
-    }
-
-    /* CSS for the hamburger icon (visible only on mobile) */
-    .hamburger-icon {
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-    }
-
-    /* Hide the navigation bar in mobile view when the hamburger icon is not active */
-    .nav-bar:not(.show) {
-        display: none;
-    }
-
-    /* Additional styles for mobile view */
     header {
         padding: 100px 0;
     }
@@ -162,10 +137,35 @@ footer {
     }
 
     nav ul {
-        justify-content: center; /* Align tabs to the center on small screens */
+        display: none; /* Hide the navigation bar on mobile */
     }
 
-    nav li {
-        margin: 5px;
+    /* Show the hamburger icon on mobile */
+    .hamburger-icon {
+        display: block;
+        text-align: right;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    /* Hide the dropdown arrow on mobile */
+    nav li i {
+        display: none;
+    }
+
+    /* Show the dropdown menu on mobile when the hamburger icon is clicked */
+    .show-nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .show-nav ul li {
+        padding: 10px;
     }
 }
