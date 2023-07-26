@@ -1,0 +1,146 @@
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Set the background color to white */
+    color: #000; /* Set the text color to black */
+}
+
+/* Dropdown Styles */
+.dropdown {
+    display: none; /* Hide the dropdown by default */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Show the dropdown when the parent is hovered */
+nav li:hover .dropdown {
+    display: block;
+}
+
+/* Style the dropdown links */
+.dropdown li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Additional Styles for Navigation Bar */
+nav {
+    background-color: #fff; /* Set the navigation bar background to white */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #000; /* Set the navigation text color to black */
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px; /* Add rounded corners to the tabs */
+}
+
+nav a:hover {
+    background-color: #555;
+    color: #fff; /* Change the navigation text color on hover to white */
+}
+
+/* Styles for Phone and Mail Icons */
+.header-contact {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex; /* Display the items in the header contact section as flex items */
+    justify-content: flex-start; /* Align the items to the left */
+}
+
+.contact-info {
+    font-size: 16px;
+    margin-right: 20px; /* Add some space between the phone number and email address */
+    background-color: transparent; /* Set the background color to transparent */
+    padding: 0; /* Remove any padding */
+}
+
+/* Styles for Phone and Mail Icons */
+.header-contact i {
+    margin-right: 5px;
+    color: #fff; /* Set the icon color to white */
+}
+
+/* Styles for Header Title */
+header {
+    background-image: url("header-bg.jpg");
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+    position: relative; /* Added to set a position context for the border line */
+}
+
+header h1 {
+    font-size: 48px; /* Increase the font size for the header title */
+    margin-bottom: 30px; /* Add some space below the header title */
+}
+
+/* Section Styles */
+section {
+    padding: 30px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 100px 0;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    nav ul {
+        justify-content: center; /* Align tabs to the center on small screens */
+    }
+
+    nav li {
+        margin: 5px;
+    }
+}
