@@ -93,15 +93,14 @@ header h1 {
 /* Hamburger Icon Styles - Display only on mobile */
 .menu-icon {
     display: none; /* Hide the hamburger icon by default on larger screens */
+    cursor: pointer; /* Add a cursor pointer on hover */
+    padding: 5px;
 }
 
-/* Media Queries for Responsive Design */
+/* Show the hamburger icon on mobile */
 @media screen and (max-width: 768px) {
-    /* Show the hamburger icon on mobile */
     .menu-icon {
         display: block;
-        text-align: right;
-        padding: 10px;
     }
 
     /* Hide the navigation links on mobile */
@@ -110,7 +109,7 @@ header h1 {
     }
 
     /* Show the navigation links when the hamburger icon is clicked */
-    .menu-icon.active ~ nav ul {
+    nav ul.show {
         display: flex;
         flex-direction: column;
         background-color: #fff;
@@ -121,7 +120,7 @@ header h1 {
     }
 
     /* Style the navigation links on mobile */
-    .menu-icon.active ~ nav ul li {
+    nav ul.show li {
         margin-right: 0;
         margin-bottom: 10px;
     }
