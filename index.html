@@ -13,12 +13,10 @@
     </div>
 
     <!-- Mobile Menu Icon -->
-    <div class="menu-icon">
-        <i class="fas fa-bars"></i>
-    </div>
+    <div class="menu-icon" onclick="toggleNav()"><i class="fas fa-bars"></i></div>
 
     <!-- Navigation Bar -->
-    <nav>
+    <nav class="nav-links"> <!-- Added "nav-links" class -->
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#aboutus">About Us</a></li>
@@ -75,5 +73,13 @@
     <footer>
         <p>Contact us at: info@shimla-manali-tourism.com</p>
     </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        function toggleNav() {
+            var navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
